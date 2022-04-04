@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+}
+
+li{
+    display: inline-block;
+    margin-right: 35px;
+}
+
+/* Header */
+
+header{
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    background-color: rgba(98, 174, 218, 0.719);
+    padding: 10px;
+    font-size: 25px;
+}
+
+.logo{
+    width: 150px;
+}
+
+.ul-1{
+    float:right;
+    list-style: none;
+    display: inline-block;
+    margin-top: 65px; 
+    margin-right: 50px;
+    font-family: sans-serif;   
+    
+}
+
+.ul-2{
+    list-style: none;
+    padding: 0;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    font-family: sans-serif;
+}
+
+.Home{
+    text-decoration: none;
+    color: black;
+
+}
+
+.Home-2{
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    transition: 1s;
+    border-radius: 5px;
+    background-color: rgba(98, 174, 218, 0.719);
+    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 25px;
+  }
+
+/* Redes sociais */
+
+.insta-1{
+     margin-top: 5px;
+     width: 70px;
+    
+
+}
+
+.face-1{
+     width: 65px;
+
+}
+
+
+button{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+button:hover {
+    transition: 0.5s;
+    border-radius: 5px;
+    color: black;
+    opacity: 0.9;
+    background-color: rgba(181, 255, 255, 0.5);
+}
+
+button:focus ~ ul{
+    height:350px;
+}
+
+.contt{
+    width: 100%;
+   padding-top: 5rem;
+    
+}
+
+.imgcont{
+    padding-left: 45%;
+width: 250px;
+}
+
+.andamento{
+  
+    text-align: center;
+    font-size: 5rem;
+    font-family: sans-serif;
+}
+
+
+@media (max-width: 700px){
+
+    header{
+        width: 100%;
+    }
+
+    .ul-1{
+        list-style-type: none;
+        display: none;
+    }
+
+    header, .ul-2{
+        flex-direction: column;
+        align-items: unset;
+
+    }
+
+    li{
+        padding: 20px;
+        width: 100%;
+    }
+
+    button{
+        display: flex;
+    }
+
+    .contt{
+        width: 100%;
+       padding-top: 5rem;
+        
+    }
+    
+    .imgcont{
+        padding-left: 20%;
+    width: 250px;
+    }
+    
+    .andamento{
+      
+        text-align: center;
+        font-size: 3rem;
+        font-family: sans-serif;
+    }
+}
